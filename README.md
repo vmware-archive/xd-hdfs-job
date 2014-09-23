@@ -30,14 +30,14 @@ Copy the scripts `src/main/resources/*.groovy` into `${XD_HOME}/modules/processo
     --sourceDir=/xd/daily 
     --targetDir=/xd/archive" --deploy 
 
-OR
+Or
 
     xd>job create hdfs-a2 --definition "hdfs-archive 
     --sourceDir=/xd/daily 
     --targetDir=/xd/archive
     --appendDate=true" --deploy 
     
-OR
+Or
 
     xd>job create hdfs-a3 --definition "hdfs-archive 
     --sourceDir=/xd/daily 
@@ -45,7 +45,7 @@ OR
     --deleteFiles=true
     --dateFormat='yyyy-MM-dd''T''HH.mm.ss'" --deploy 
 
-##### Embedded SQL command      
+##### HDFS Script      
 
     xd>job create hdfs-s1 --definition "hdfs-script --location=sample1.groovy" --deploy 
   
